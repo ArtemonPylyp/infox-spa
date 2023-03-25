@@ -11,7 +11,7 @@ import { Reviews } from "@/components/Reviews/Reviews";
 import { Prices } from "@/components/Prices/Prices";
 import { Footer } from "@/components/Footer/Footer";
 import { useState } from "react";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Form } from "@/components/Form/Form";
 import { GetStaticProps } from "next";
 import { useTranslation } from "next-i18next";
@@ -21,12 +21,12 @@ import { Context } from "@/src/Context";
 import "../i18n";
 import { Sections } from "../i18n";
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale as string)),
-  },
-  revalidate: 10,
-});
+// export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale as string)),
+//   },
+//   revalidate: 10,
+// });
 export default function Main() {
   const [open, setOpen] = useState(false);
   const setClose = () => setOpen((prev) => !prev);

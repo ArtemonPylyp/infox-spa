@@ -1,7 +1,7 @@
 import styles from "./Socials.module.scss";
 
 import Instagram from "/images/footer/instagram.svg";
-import Facebook from "/images/footer/Facebook.svg";
+import Facebook from "/images/footer/facebook.svg";
 import Twiter from "/images/footer/twiter.svg";
 import Telegram from "/images/footer/telegram.svg";
 

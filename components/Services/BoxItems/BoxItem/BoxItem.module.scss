@@ -1,0 +1,65 @@
+@import "styles/global/_mixins.scss";
+.boxItem {
+  padding: 40px;
+  position: relative;
+  width: 480px;
+
+  border-radius: 16px;
+  @include media(phone) {
+    width: auto;
+  }
+}
+.Span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0000;
+  top: 0;
+  left: 0;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-top-left-radius: 10px;
+}
+.Span2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0000;
+  right: 0;
+  bottom: 0;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-bottom-right-radius: 10px;
+}
+.Span3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0000;
+  top: 0;
+  right: 0;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-top-right-radius: 10px;
+}
+.Span4 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0000;
+  bottom: 0;
+  left: 0;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  border-bottom-left-radius: 10px;
+}
+.inBox {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #b9b9b9;
+}

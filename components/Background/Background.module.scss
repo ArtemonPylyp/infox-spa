@@ -1,0 +1,55 @@
+@import "styles/global/_mixins.scss";
+
+.firstCircle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: -24px;
+  top: 94px;
+
+  background: rgba(0, 112, 240, 0.9);
+  border-radius: 24px;
+  animation: float 1s infinite ease-in-out alternate;
+  animation-delay: 0.1s;
+  @include media(phone) {
+    display: none;
+  }
+}
+.transparentCircle {
+  position: absolute;
+  width: 186px;
+  height: 186px;
+  left: -103px;
+  top: 636px;
+  background: rgba(0, 112, 240, 0.9);
+  opacity: 0.3;
+  border-radius: 100px;
+  animation: float 1s infinite ease-in-out alternate;
+  animation-delay: 0.2s;
+  @include media(phone) {
+    display: none;
+  }
+}
+
+.middleCircle {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 713px;
+  top: 718px;
+  background: #5956e9;
+  border-radius: 16px;
+  animation: float 1s infinite ease-in-out alternate;
+  animation-delay: 0.3s;
+  @include media(phone) {
+    display: none;
+  }
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(5px);
+    box-shadow: 0 40px 10px -18px hsla(0, 0%, 0%, 0.2),
+      0 40px 16px -12px hsla(0, 0%, 0%, 0.2);
+  }
+}

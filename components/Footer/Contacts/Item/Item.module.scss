@@ -1,0 +1,19 @@
+.Item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &__Description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #9f9f9f;
+  }
+
+  &__Span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #9f9f9f;
+  }
+}

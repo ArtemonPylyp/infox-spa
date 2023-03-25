@@ -1,0 +1,79 @@
+@import "/styles/global/_mixins.scss";
+.decision {
+  position: relative;
+  margin-top: 5%;
+  padding: 5% 10%;
+  @include media(phone) {
+    padding: 16px 0;
+  }
+}
+
+.inDecision {
+  border-top: 2px solid #35a36a;
+  border-bottom: 2px solid #35a36a;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 80px;
+  border-radius: 16px;
+  min-height: 500px;
+
+  @include media(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 45px 20px;
+    margin: 0 40px;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  color: #ffffff;
+  width: auto;
+  @include media(phone) {
+    width: 200px;
+    font-size: 36px;
+  }
+}
+.buttonBlock {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  min-width: 250px;
+  height: 60px;
+  border-bottom: 1px solid #3cba79;
+  border-radius: 30px;
+  transition: 0.25s ease;
+  &:hover {
+    transform: translateY(-6px);
+    background: #35a36a;
+    box-shadow: 0 0 15px -2px #00ff7b;
+  }
+  @include media(phone) {
+    width: 100%;
+    border: 1px solid #3cba79;
+  }
+}
+.button {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.offers {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  @include media(phone) {
+    flex-direction: column;
+  }
+}

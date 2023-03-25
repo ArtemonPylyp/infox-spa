@@ -1,0 +1,88 @@
+@import "/styles/global/_mixins.scss";
+
+.prices {
+  position: relative;
+  //background: #f5f0ff;
+  //   padding-top: 5%;
+  //   padding-bottom: 5%;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  @include media(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 16px;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  @include media(phone) {
+    font-size: 36px;
+  }
+}
+.dots {
+  position: absolute;
+  width: 68px;
+  height: 100px;
+  left: -10px;
+  top: 250px;
+}
+
+.items {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  @include media(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px 20px;
+  }
+
+  @include media(tablet) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  @include media(phone) {
+    align-items: flex-start;
+    padding: 0 7%;
+    padding-top: 15%;
+  }
+}
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 700px;
+  text-align: center;
+  color: #9f9f9f;
+  @include media(phone) {
+    font-size: 18px;
+  }
+  @include media(phone) {
+    text-align: start;
+  }
+}

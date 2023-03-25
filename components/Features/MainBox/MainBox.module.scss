@@ -1,0 +1,85 @@
+@import "/styles/global/_mixins.scss";
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  max-width: 100%;
+  @include media(phone) {
+    width: 100%;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 90px;
+  color: #f8f8f8;
+  @include media(phone) {
+    font-size: 36px;
+  }
+}
+.description {
+  margin-top: 20px;
+  max-width: 670px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #9f9f9f;
+  @include media(phone) {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+.span {
+  font-weight: 700;
+  color: #475cbc;
+}
+.itemsBlock {
+  display: flex;
+  flex-direction: column;
+  @include media(phone) {
+    gap: 45px;
+  }
+}
+.itemBox {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-top: 1px solid white;
+  border-radius: 30px;
+  padding: 80px;
+  @include media(phone) {
+    border-bottom: 1px solid white;
+  }
+}
+.buttonBlock {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  min-width: 250px;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 112, 240, 0.9);
+  border-radius: 30px;
+  transition: 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    background: rgba(0, 112, 240, 0.9);
+    box-shadow: 0 0 15px -2px rgba(0, 112, 240, 0.9);
+  }
+  @include media(phone) {
+    border: 1px solid rgba(0, 112, 240, 0.9);
+    max-width: 100%;
+  }
+}
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}

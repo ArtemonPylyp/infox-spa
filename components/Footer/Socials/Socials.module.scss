@@ -1,0 +1,48 @@
+@import "/styles/global/_mixins.scss";
+
+.Socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(phone) {
+    margin-top: 10%;
+  }
+
+  &__Title {
+    width: 150px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #f8f8f8;
+
+    @include media(phone) {
+      display: none;
+    }
+  }
+
+  &__List {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    @include media(phone) {
+      justify-content: space-between;
+    }
+  }
+
+  &__BlockIcon {
+    cursor: pointer;
+    :hover {
+      transition: all 0.25s ease;
+      fill: rgba(0, 112, 240, 0.9);
+    }
+  }
+  &__Icon {
+    width: 40px;
+    height: 40px;
+    fill: #f8f8f8;
+
+    transition: all 0.25s ease;
+  }
+}

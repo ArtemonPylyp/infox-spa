@@ -1,0 +1,22 @@
+@import "/styles/global/_mixins.scss";
+
+.pictureBox {
+  width: 60%;
+
+  @include media(phone) {
+    display: none;
+  }
+}
+
+.image {
+  animation: float 1s infinite ease-in-out alternate;
+  max-width: 70%;
+  @include media(phone) {
+    display: none;
+  }
+}
+@keyframes float {
+  100% {
+    transform: translateY(10px);
+  }
+}

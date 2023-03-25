@@ -1,0 +1,38 @@
+@import "/styles/global/_mixins.scss";
+
+.features {
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  @include media(phone) {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.firstPart {
+  display: flex;
+  flex-direction: row;
+  @include media(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.SecondPart {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-column-gap: 45px;
+  grid-row-gap: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 30px;
+  padding: 80px;
+  @include media(phone) {
+    grid-template-columns: 1fr;
+  }
+}

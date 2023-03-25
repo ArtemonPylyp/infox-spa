@@ -1,0 +1,43 @@
+{
+  "title": "Full service package",
+  "buttons": {
+    "website": "Websites",
+    "spa": "SPA",
+    "applications": "Applications",
+    "design": "Design"
+  },
+  "subtitles": {
+    "website": "Website development is very necessary in business. It helps make it more popular and assists in communicating with customers.",
+    "spa": "Single Page Applications (SPAs) can be a cost-effective way to present your services or product, as they can often be faster to develop than traditional multi-page websites.",
+    "applications": "Mobile applications are usually designed to provide a faster, more seamless experience for users because they are specifically built for mobile devices. ",
+    "design": "Overall, template design can be a good option for businesses that are looking for a cost-effective and easy-to-use solution."
+  },
+  "descriptions": {
+    "website": "Website development is an essential part of any business. Businesses are increasingly using their website to increase sales, customer loyalty and brand awareness. Through a well-designed website, businesses can provide detailed information about their products and services that is useful to customers. It also allows them to showcase the visual aspects of their products or services to make them more appealing to potential buyers.",
+    "spa": "SPAs can be faster to load than traditional websites because they load all of the necessary content and resources upfront, they can also require more complex development and maintenance.",
+    "applications": "Mobile applications are specifically designed for mobile devices, which means that they provide a better user experience than mobile websites. They can take advantage of the device's hardware and software capabilities, making them faster, more responsive, and more engaging.",
+    "design": "Templates are often created by professional designers and developers and are available for purchase or use through various platforms and services."
+  },
+  "boxes": {
+    "website": {
+      "first": "A website is perfect way in order to increase sales of your company.",
+      "second": "Allows you to reach a wider audience beyond your local area.",
+      "third": "Can be used to promote your products or services and reach new customers through digital marketing channels."
+    },
+    "spa": {
+      "first": "SPA Can be a cost-effective in developing.",
+      "second": "Faster to load than traditional websites because they load all of the necessary content and resources upfront",
+      "third": "May offer a more streamlined and interactive user experience"
+    },
+    "applications": {
+      "first": "Mobile applications can be designed to work offline.",
+      "second": "Can be customized to meet the specific needs and preferences of individual users.",
+      "third": " Mobile apps provide a way for businesses to build brand awareness and customer loyalty by providing a more engaging."
+    },
+    "design": {
+      "first": "Perfect design can improve the overall user experience and help businesses build trust and credibility with their target",
+      "second": "Templates can be customized to some extent, allowing businesses to add their own branding and content to the design.",
+      "third": "There is a wide variety of templates available for different types of websites and applications."
+    }
+  }
+}

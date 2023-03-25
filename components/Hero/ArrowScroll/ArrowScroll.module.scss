@@ -1,0 +1,27 @@
+@import "styles/global/_mixins.scss";
+.ArrowBlock {
+  display: none;
+
+  @include media(phone) {
+    display: flex;
+    height: 90px;
+    width: auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 112, 240, 0.9);
+    transition: all 0.25s ease;
+    &:hover {
+      background-color: rgba(0, 112, 240, 0.9);
+      box-shadow: 0 0 15px -2px rgba(0, 112, 240, 0.9);
+    }
+  }
+  &__Arrow {
+    display: none;
+    @include media(phone) {
+      display: block;
+      fill: #f8f8f8;
+      width: 35px;
+      transform: rotate(90deg);
+    }
+  }
+}

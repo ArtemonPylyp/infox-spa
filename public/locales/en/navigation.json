@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Home"
+  },
+  "about": {
+    "title": "About us"
+  },
+  "services": {
+    "title": "services"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "button": {
+    "title": "Contact us",
+    "click": "Click on me"
+  }
+}

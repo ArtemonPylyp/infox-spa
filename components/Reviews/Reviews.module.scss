@@ -1,0 +1,97 @@
+@import "/styles/global/_mixins.scss";
+
+.Reviews {
+  position: relative;
+  // background: linear-gradient(
+  //   141.34deg,
+  //   #f5f0ff 0%,
+  //   #eff6fe 50.36%,
+  //   #edfaf5 100%
+  // );
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  justify-content: space-around;
+  overflow-y: scroll;
+  @include media(tablet) {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
+    padding: 15% 10%;
+  }
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+
+  &__Coma {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 6%;
+    opacity: 0.5;
+    @include media(phone) {
+      width: 70px;
+    }
+  }
+  &__Bigger {
+    width: 445px !important;
+
+    @include media(phone) {
+      width: auto !important;
+    }
+  }
+
+  &__Text {
+    max-width: 445px;
+
+    @include media(phone) {
+      position: static;
+    }
+  }
+  &__Title {
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+
+    @include media(phone) {
+      font-size: 36px;
+      line-height: 38px;
+    }
+  }
+  &__Description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #9f9f9f;
+  }
+
+  &__Block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    @include media(phone) {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    @include media(tablet) {
+      margin-top: 11%;
+      margin-left: 0;
+    }
+  }
+
+  &__Second {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

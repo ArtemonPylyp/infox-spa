@@ -1,0 +1,36 @@
+{
+  "title": "Our Pricing Plans",
+  "perDesign": "Per project",
+  "description": "Check out our basic rates for each service and choose the best one which suits your needs. Or fill out the form for more detailed information.",
+  "button": "Get Started",
+  "fistItem": {
+    "title": "Basic",
+    "description": "A standard option for a startup with a limited budget",
+    "plusses": {
+      "first": "Choose website layout design",
+      "second": "Basic SEO optimization",
+      "third": "Multilingualism",
+      "four": "Form validation"
+    }
+  },
+  "secondItem": {
+    "title": "Business",
+    "description": "A full-fledged website, without functional limitations",
+    "plusses": {
+      "first": "Individual design",
+      "second": "Animations and WOW effects",
+      "third": "Advanced SEO optimization",
+      "four": "Possibility of payment on the website",
+      "five": "Pop-up forms"
+    }
+  },
+  "thirdItem": {
+    "title": "Unique",
+    "description": "A unique project for those who want to conquer space",
+    "plusses": {
+      "first": "Want to stand out",
+      "second": "You want to be special",
+      "third": "You want to be the best"
+    }
+  }
+}

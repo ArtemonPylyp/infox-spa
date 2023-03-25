@@ -1,0 +1,21 @@
+@import "/styles/global/_mixins.scss";
+.Privacy {
+  margin-top: 45px;
+
+  @include media(phone) {
+    display: none;
+  }
+
+  &__Content {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__Text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9f9f9f;
+  }
+}

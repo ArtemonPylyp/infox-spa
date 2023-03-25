@@ -1,0 +1,34 @@
+{
+  "title": "Our Best Features",
+  "description": "Take a look at what we have to offer and make a right way decision you won't regret.",
+  "span": "Schedule a demo with our friendly experts.?",
+  "button": "Yeap, I want it!",
+  "firstBox": {
+    "firstItem": {
+      "title": "Choose an appropriate template",
+      "description": "We are providing you an imposing amount of templates thus you can choose the best one."
+    },
+    "secondItem": {
+      "title": "Easy Integration",
+      "description": "In case your project started earlier we could easily keep working with that."
+    }
+  },
+  "secondBox": {
+    "firstItem": {
+      "title": "Code Quality",
+      "description": "High quality code is necessary to achieve efficiency and to maintain a high level of productivity."
+    },
+    "secondItem": {
+      "title": "SEO",
+      "description": "SEO (Search Engine Optimisation) is a good way to raise the position of website to the top level"
+    },
+    "thirdItem": {
+      "title": "Signing an Agreement",
+      "description": "An agreement provides you with a safe and confidential way to cooperate without the any risks."
+    },
+    "fourItem": {
+      "title": "Support",
+      "description": "Even after ending the project we provide you daily support and look forward to your reviews."
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "styles/global/_mixins.scss";
+.images {
+  //position: relative;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-row-gap: 3em;
+  @include media(phone) {
+    position: relative;
+    align-items: center;
+  }
+}
+// .image {
+//   cursor: pointer;
+// }
+// .mainBlock {
+//   position: relative;
+//   transition-duration: 1s;
+//   &:hover {
+//     transition: 0.5s ease;
+//     transform: scale(1.02);
+//   }
+// }
+
+// .description {
+//   padding: 15%;
+//   position: absolute;
+//   top: 0;
+//   display: block;
+//   width: 450px;
+//   height: 250px;
+//   background-color: #fafbfc;
+//   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+//   border-radius: 20px;
+// }
+// .title {
+//   font-size: 20px;
+//   font-weight: 700;
+//   margin-bottom: 15px;
+// }
+// .text {
+//   width: auto;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 25px;
+// }

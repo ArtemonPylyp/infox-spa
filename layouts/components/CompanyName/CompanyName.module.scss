@@ -1,0 +1,18 @@
+@import "styles/global/_mixins.scss";
+
+.Logo {
+  font-size: 55px;
+  font-weight: 700;
+  color: #89ceff;
+
+  @include media(tablet) {
+    font-size: 40px;
+  }
+  @include media(phone) {
+    font-size: 25px;
+  }
+
+  &__Span {
+    color: #0186e7;
+  }
+}

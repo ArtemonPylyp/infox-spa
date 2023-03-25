@@ -1,0 +1,23 @@
+{
+  "reachUs": {
+    "title": "Звертайся до нас!",
+    "support": "Підтримка ",
+    "general": "Телефон ",
+    "ukraineOffice": "Офіс "
+  },
+  "products": {
+    "title": "Продукти",
+    "apps": "Додатки",
+    "websites": "Вебсайти",
+    "platforms": "Платформи"
+  },
+  "resources": {
+    "title": "Ресурси",
+    "blog": "Блог",
+    "prices": "Прас Лист",
+    "contactUs": "Контакти"
+  },
+  "description": "Ми любимо виклики, тому годі чекати, давай за роботу",
+  "rights": "Opmantek 2022. Всі права захищені",
+  "privacy": "Terms & Privacy"
+}

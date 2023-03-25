@@ -1,0 +1,23 @@
+{
+  "reachUs": {
+    "title": "Reach Us",
+    "support": "Support ",
+    "general": "General ",
+    "ukraineOffice": "Ukraine Office "
+  },
+  "products": {
+    "title": "Products",
+    "apps": "Apps",
+    "websites": "Websites",
+    "platforms": "Platforms"
+  },
+  "resources": {
+    "title": "Resources",
+    "blog": "Blog",
+    "prices": "Prices",
+    "contactUs": "Contact Us"
+  },
+  "description": "We love challenges, so don't wait, let's go.",
+  "rights": "Opmantek 2022. All rights reserved",
+  "privacy": "Terms & Privacy"
+}

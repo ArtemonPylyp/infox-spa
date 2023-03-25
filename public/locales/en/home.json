@@ -1,0 +1,9 @@
+{
+  "main": {
+    "description": "Need a working website for your business? Want it creative? Too many questions, You are in the right place."
+  },
+  "buttons": {
+    "formButton": "Details",
+    "priceButton": "VIEW PRICING"
+  }
+}

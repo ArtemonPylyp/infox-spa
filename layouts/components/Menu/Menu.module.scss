@@ -1,0 +1,22 @@
+@import "styles/global/_mixins.scss";
+
+.Menu {
+  &__Icon {
+    display: none;
+    @include media(tablet) {
+      padding: 11px 15px;
+      border-radius: 35px;
+      border: 1px solid rgba(0, 112, 240, 0.9);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  &__Lines {
+    display: flex;
+    width: 20px;
+    height: 1.5px;
+    border-radius: 2px;
+    background: #fff;
+  }
+}

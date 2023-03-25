@@ -1,0 +1,19 @@
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  &__Title {
+    font-weight: 600;
+    font-size: 25px;
+
+    line-height: 26px;
+    color: #f8f8f8;
+  }
+
+  &__Items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

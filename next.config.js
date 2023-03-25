@@ -8,6 +8,7 @@ const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   i18n,
+  trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },

@@ -29,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.0",
+    "react-intl": "^6.3.2",
     "react-tsparticles": "^2.9.3",
     "scss-reset": "^1.2.2",
     "tsparticles": "^2.9.3",

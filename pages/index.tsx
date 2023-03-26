@@ -27,6 +27,24 @@ import { Sections } from "../i18n";
 //   },
 //   revalidate: 10,
 // });
+
+// const getPathSlugs = () => {
+//   // We fetched locales from our API once at build time
+//   return ["de", "en", "uk", "ru"].map((locale) => ({
+//     params: {
+//       locale,
+//     },
+//   }));
+// };
+
+export async function getStaticProps({ params }: any) {
+  return {
+    props: {
+      ...params,
+    },
+  };
+}
+
 export default function Main() {
   const [open, setOpen] = useState(false);
   const setClose = () => setOpen((prev) => !prev);

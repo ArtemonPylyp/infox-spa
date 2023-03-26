@@ -13,6 +13,17 @@ export const Animation: React.FC = () => (
       <li></li>
       <li></li>
       <li></li>
+    </ul>
+    <ul className={styles.plane}>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul className={styles.plane}>
       <li></li>
       <li></li>
       <li></li>
@@ -33,15 +44,6 @@ export const Animation: React.FC = () => (
       <li></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
     </ul>
     <ul className={styles.plane}>
       <li></li>
@@ -52,68 +54,8 @@ export const Animation: React.FC = () => (
       <li></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
     </ul>
     <ul className={styles.plane}>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul className={styles.plane}>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul className={styles.plane}>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
       <li></li>
       <li></li>
       <li></li>

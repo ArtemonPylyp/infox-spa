@@ -9,8 +9,9 @@ const nextConfig = {
   output: "export",
   trailingSlash: true,
   reactStrictMode: true,
+  reactStrictMode: true,
   i18n,
-
+  concurrentFeatures: false,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },

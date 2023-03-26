@@ -50,14 +50,14 @@
       }
     }
 
-    @for $i from 1 through 18 {
+    @for $i from 1 through 14 {
       li:nth-child(#{$i}) {
         transform: rotate(#{($i * 10) * 15}deg);
       }
     }
   }
 
-  @for $j from 1 through 36 {
+  @for $j from 1 through 28 {
     .plane:nth-child(#{$j}) {
       transform: rotateY(#{($j * 10) * 15}deg);
     }

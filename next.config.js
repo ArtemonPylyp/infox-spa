@@ -6,9 +6,11 @@ const { i18n } = require("./next-i18next.config");
 
 const path = require("path");
 const nextConfig = {
+  output: "export",
+  trailingSlash: true,
   reactStrictMode: true,
   i18n,
-  trailingSlash: true,
+
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },

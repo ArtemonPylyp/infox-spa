@@ -45,27 +45,29 @@ export enum Sections {
   Langs = "langs",
   Form = "form",
 }
-i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    fallbackLng: "en",
-    debug: true,
-    detection: {
-      order: ["queryString", "cookie"],
-      caches: ["cookie"],
-      lookupQuerystring: "lng",
-      lookupCookie: "i18next",
-      lookupLocalStorage: "i18nextLng",
-      lookupSessionStorage: "i18nextLng",
-      excludeCacheFor: ["cimode"],
-    },
+if (process.env.NODE_ENV !== "production") {
+  i18n
+    .use(Backend)
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      fallbackLng: "en",
+      debug: true,
+      detection: {
+        order: ["queryString", "cookie"],
+        caches: ["cookie"],
+        lookupQuerystring: "lng",
+        lookupCookie: "i18next",
+        lookupLocalStorage: "i18nextLng",
+        lookupSessionStorage: "i18nextLng",
+        excludeCacheFor: ["cimode"],
+      },
 
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+      interpolation: {
+        escapeValue: false,
+      },
+    });
+}
 // i18n.init();
 
 export default i18n;

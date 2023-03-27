@@ -50,14 +50,14 @@
       }
     }
 
-    @for $i from 1 through 14 {
+    @for $i from 1 through 10 {
       li:nth-child(#{$i}) {
         transform: rotate(#{($i * 10) * 15}deg);
       }
     }
   }
 
-  @for $j from 1 through 28 {
+  @for $j from 1 through 20 {
     .plane:nth-child(#{$j}) {
       transform: rotateY(#{($j * 10) * 15}deg);
     }
@@ -71,11 +71,11 @@
     transform: rotate3d(0, 0, 0, 360deg);
   }
 }
-@-webkit-keyframes rotateShpere {
-  0% {
-    -webkit-transform: rotate3d(1, 1, 1, -360deg);
-  }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 0, 360deg);
-  }
-}
+// @-webkit-keyframes rotateShpere {
+//   0% {
+//     -webkit-transform: rotate3d(1, 1, 1, -360deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate3d(0, 0, 0, 360deg);
+//   }
+// }

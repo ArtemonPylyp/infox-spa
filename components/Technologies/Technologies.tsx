@@ -11,7 +11,6 @@ export const Technologies: React.FC = () => {
   return (
     <section id="about" className={styles.technologies}>
       <div className={styles.fistBlock}>
-        <Dots className={styles.dots} alt="dots" />
         <h2 className={styles.title}>{t("title")}</h2>
         <IconsGrid />
       </div>

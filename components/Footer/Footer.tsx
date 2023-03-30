@@ -32,8 +32,6 @@ export const Footer: React.FC = () => {
     <footer id="contacts" className={styles.Footer}>
       <div className={styles.Footer__LogoBlock}>
         <Logo className={styles.Footer__Logo} alt="logo" />
-
-        {/* <Divider /> */}
       </div>
 
       <div className={styles.Footer__MainSection}>

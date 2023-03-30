@@ -6,7 +6,13 @@ const { i18n } = require("./next-i18next.config");
 
 const path = require("path");
 const nextConfig = {
-  output: "export",
+  // exportPathMap: async function () {
+  //   return {
+  //     "/": { page: "/" },
+  //     "/uk": { page: "/uk" },
+  //   };
+  // },
+  // output: "export",
   trailingSlash: true,
   reactStrictMode: true,
   reactStrictMode: true,

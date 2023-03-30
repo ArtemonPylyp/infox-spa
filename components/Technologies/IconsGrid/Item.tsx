@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../IconsGrid/Item.module.scss";
 import { useState } from "react";
 export interface Item {

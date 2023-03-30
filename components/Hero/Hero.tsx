@@ -1,19 +1,15 @@
-//import MainCat from "/images/hero/logo.svg";
-import Cat from "images/hero/cat.svg";
-import MainCat from "/images/hero/logo4.svg";
 import styles from "../Hero/Hero.module.scss";
 
 import Arrow from "/images/hero/Arrow.svg";
 import { Particles } from "../Particle/Particles";
 import { ArrowScroll } from "./ArrowScroll/ArrowScroll";
-import { useContext, useState } from "react";
-import { Form } from "../Form/Form";
+import { useContext } from "react";
+
 import { Context } from "../../src/Context";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export const Hero: React.FC = () => {
-  const { t } = useTranslation(Sections.Home);
+  const { t } = useTranslation("home");
   const close = useContext(Context);
   return (
     <main id="home" className={styles.main}>

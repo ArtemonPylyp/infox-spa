@@ -1,12 +1,11 @@
-import { useContext, useMemo, useState } from "react";
+import { useContext, useState } from "react";
 import styles from "../Item/Item.module.scss";
 import { Pointer } from "../Pointer/Pointer";
 
 import { Divider } from "@/components/Footer/Divider/Divider";
 import { ClassValue } from "clsx";
 import { Context } from "@/src/Context";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export type ItemProps = {
   title: string;
@@ -25,7 +24,7 @@ export const Item: React.FC<ItemProps> = ({
 }) => {
   const [state, setState] = useState(primary);
   const close = useContext(Context);
-  const { t } = useTranslation(Sections.Prices);
+  const { t } = useTranslation("prices");
 
   return (
     <>

@@ -3,11 +3,10 @@ import styles from "../Services/Services.module.scss";
 import { ServiceBox } from "./ServiceBox/ServiceBox";
 import { useState } from "react";
 import { Button } from "./ButtonNavigation/Button/Button";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export const Services: React.FC = () => {
-  const { t } = useTranslation(Sections.Services);
+  const { t } = useTranslation("services");
   const [state, setState] = useState(1);
   return (
     <section id="services" className={styles.features}>

@@ -7,7 +7,7 @@ import styles from "../layouts/Navigation.module.scss";
 
 import { Context } from "@/src/Context";
 import { useTranslation } from "next-i18next";
-import { Sections } from "@/i18n";
+
 import { CompanyName } from "./components/CompanyName/CompanyName";
 
 interface Navigation {
@@ -15,7 +15,7 @@ interface Navigation {
 }
 
 export default function Navigation({ children }: Navigation) {
-  const { t } = useTranslation(Sections.Navigation);
+  const { t } = useTranslation("navigation");
 
   const close = useContext(Context);
 

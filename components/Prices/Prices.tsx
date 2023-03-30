@@ -1,15 +1,13 @@
-import { useContext } from "react";
 import styles from "../Prices/Prices.module.scss";
 import { Item } from "./Item/Item";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export type PriceProps = {
   setClosed?: () => void;
 };
 
 export const Prices: React.FC<PriceProps> = ({ setClosed }) => {
-  const { t } = useTranslation(Sections.Prices);
+  const { t } = useTranslation("prices");
   const firstItemsArray: string[] = [
     t("fistItem.plusses.first"),
     t("fistItem.plusses.second"),

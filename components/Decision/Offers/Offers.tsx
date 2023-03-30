@@ -1,9 +1,11 @@
 import styles from "../Offers/Offers.module.scss";
-import Image from "next/image";
+
 import Decision from "/images/decision/decision.svg";
+
 type Offers = {
   description: string;
 };
+
 export const Offers: React.FC<Offers> = ({ ...props }) => {
   return (
     <div className={styles.offers}>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../Button/Button.module.scss";
 import clsx from "clsx";
 interface Button {
@@ -20,8 +19,6 @@ export const Button: React.FC<Button> = ({ title, onClick }) => {
         });
       }}
       className={clsx(styles.button)}
-
-      // defaultActive ? styles.default :
     >
       {title}
     </button>

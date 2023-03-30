@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import MenuIcon from "/images/hero/Menu.svg";
-import CloseIcon from "/images/hero/MenuClose.svg";
+
 import styles from "./Menu.module.scss";
 import clsx, { ClassValue } from "clsx";
 import { MenuNavigation } from "../MenuNavigation/MenuNavigation";

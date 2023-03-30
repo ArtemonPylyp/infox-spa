@@ -1,13 +1,13 @@
 import styles from "../Technologies/Technologies.module.scss";
-import Image from "next/image";
+
 import { IconsGrid } from "./IconsGrid/IconsGrid";
-import Dots from "/images/hero/Dots.svg";
-import animation from "/images/technologies/animation.png";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+
+import { useTranslation } from "next-i18next";
+
 import { Animation } from "./Animation/Animation";
+
 export const Technologies: React.FC = () => {
-  const { t } = useTranslation(Sections.Technologies);
+  const { t } = useTranslation("technologies");
   return (
     <section id="about" className={styles.technologies}>
       <div className={styles.fistBlock}>

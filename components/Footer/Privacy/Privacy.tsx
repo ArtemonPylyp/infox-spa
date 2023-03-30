@@ -1,10 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { Divider } from "../Divider/Divider";
 import styles from "./Privacy.module.scss";
-import { Sections } from "@/i18n";
 
 export const Privacy: React.FC = () => {
-  const { t } = useTranslation(Sections.Footer);
+  const { t } = useTranslation("footer");
 
   return (
     <div className={styles.Privacy}>

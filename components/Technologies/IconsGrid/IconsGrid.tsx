@@ -1,7 +1,7 @@
 import styles from "../IconsGrid/IconsGrid.module.scss";
 
 import { Item } from "./Item";
-import { TextFunction, techData } from "@/src/texts";
+import { TextFunction } from "@/src/texts";
 export const IconsGrid: React.FC = () => {
   const dataTech = TextFunction();
   return (

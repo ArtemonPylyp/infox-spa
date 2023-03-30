@@ -2,8 +2,7 @@ import clsx, { ClassValue } from "clsx";
 import CloseIcon from "/images/hero/MenuClose.svg";
 import React, { FormEvent, useState } from "react";
 import styles from "./Form.module.scss";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export type FormProps = {
   className?: ClassValue | ClassValue[];
@@ -11,7 +10,7 @@ export type FormProps = {
 };
 
 export const Form: React.FC<FormProps> = ({ className, onClose }) => {
-  const { t } = useTranslation(Sections.Form);
+  const { t } = useTranslation("form");
   type FormData = {
     name: string;
     surname: string;

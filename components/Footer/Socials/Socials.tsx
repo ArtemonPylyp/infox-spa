@@ -5,13 +5,12 @@ import Facebook from "/images/footer/facebook.svg";
 import Twiter from "/images/footer/twiter.svg";
 import Telegram from "/images/footer/telegram.svg";
 
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 const SocialsArray: any[] = [Instagram, Facebook, Telegram, Twiter];
 
 export const Socials: React.FC = () => {
-  const { t } = useTranslation(Sections.Footer);
+  const { t } = useTranslation("footer");
   return (
     <div className={styles.Socials}>
       <div className={styles.Socials__Title}>{t("description")}</div>

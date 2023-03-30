@@ -1,4 +1,3 @@
-import { TextObject } from "@/src/texts";
 import styles from "../BoxItems/BoxItems.module.scss";
 import { BoxItem } from "./BoxItem/BoxItem";
 

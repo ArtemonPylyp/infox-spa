@@ -11,20 +11,19 @@ import { Reviews } from "@/components/Reviews/Reviews";
 import { Prices } from "@/components/Prices/Prices";
 import { Footer } from "@/components/Footer/Footer";
 import { useState } from "react";
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Form } from "@/components/Form/Form";
-import { GetStaticProps } from "next";
+
 import { useTranslation } from "next-i18next";
-import { DefaultSeo } from "next-seo";
+import { useRouter } from "next/router";
 import { Context } from "@/src/Context";
 
-import "../i18n";
-import { Sections } from "../i18n";
-
 export default function Main() {
+  const { locale, locales, push } = useRouter();
   const [open, setOpen] = useState(false);
   const setClose = () => setOpen((prev) => !prev);
-  const { t } = useTranslation(Sections.Langs);
+  const { t } = useTranslation("langs");
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Head>
@@ -55,4 +54,25 @@ export default function Main() {
       </Background>
     </Suspense>
   );
+}
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "decision",
+        "features",
+        "footer",
+        "form",
+        "home",
+        "langs",
+        "languages",
+        "navigation",
+        "prices",
+        "reviews",
+        "services",
+        "technologies",
+        "common",
+      ])),
+    },
+  };
 }

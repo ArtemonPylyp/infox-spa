@@ -6,12 +6,12 @@ import Template from "/images/features/Items/templateCircle.svg";
 import Agreement from "/images/features/Items/agreement.svg";
 import Seo from "/images/features/Items/seo.svg";
 import Support from "/images/features/Items/support.svg";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
+
 import { useMemo } from "react";
 
 export const Features: React.FC = () => {
-  const { t } = useTranslation(Sections.Features);
+  const { t } = useTranslation("features");
 
   const data = useMemo(
     () => [

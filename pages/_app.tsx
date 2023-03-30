@@ -1,13 +1,12 @@
 import type { AppProps } from "next/app";
 import "../styles/global/reset.scss";
 import "../styles/global/global.scss";
-import { Suspense } from "react";
-import { useTranslation } from "next-i18next";
-import { DefaultSeo, NextSeo } from "next-seo";
-import { Sections } from "@/i18n";
 
-export default function App({ Component, pageProps }: AppProps) {
-  const { t } = useTranslation(Sections.Langs);
+import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+import { appWithTranslation } from "next-i18next";
+function App({ Component, pageProps }: AppProps) {
+  const { t } = useTranslation("langs");
   return (
     <>
       <NextSeo
@@ -24,13 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
           site: "@InFox",
           cardType: "summary_large_image",
         }}
-        // additionalLinkTags={
-        //   { rel:'icon', type:'image/png', sizes:'32x32', href:'/public/favicon-32x32.png'}
-
-        // }
       />
 
       <Component {...pageProps} />
     </>
   );
 }
+export default appWithTranslation(App);

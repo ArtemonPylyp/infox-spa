@@ -1,6 +1,6 @@
 import { ClassValue } from "clsx";
 import clsx from "clsx";
-import Image from "next/image";
+
 import styles from "../BoxItem/BoxItem.module.scss";
 interface BoxItem {
   Icon: any;

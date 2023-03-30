@@ -1,19 +1,14 @@
 import styles from "./MenuNavigation.module.scss";
-import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
+
 import { Socials } from "@/components/Footer/Socials/Socials";
 import CloseIcon from "/images/hero/MenuClose.svg";
-import {
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-  useTransition,
-} from "react";
+import { useContext } from "react";
 import clsx, { ClassValue } from "clsx";
 import { Context } from "@/src/Context";
-import { Sections } from "@/i18n";
+
 import { useRouter } from "next/router";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
+
 export type MenuNavigationProps = {
   visible: boolean;
   onClose?: () => void;
@@ -25,14 +20,14 @@ export const MenuNavigation: React.FC<MenuNavigationProps> = ({
   onClose,
   className,
 }) => {
-  const { i18n } = useTranslation(Sections.Langs);
-  const { t } = useTranslation(Sections.Navigation);
+  const { locale, locales, push } = useRouter();
 
-  const router = useRouter();
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    router.push(router.pathname, undefined, { locale: lang });
+  const handleClick = (l: string) => () => {
+    push("/", undefined, { locale: l });
   };
+
+  const { t } = useTranslation("navigation");
+
   if (!visible) return null;
 
   const close = useContext(Context);
@@ -67,23 +62,19 @@ export const MenuNavigation: React.FC<MenuNavigationProps> = ({
         </div>
         <div className={styles.Menu__LanguageSwitcher}>
           <button
-            onClick={() => {
-              changeLanguage("en");
-            }}
+            onClick={handleClick("en")}
             className={clsx(
               styles.Menu__LanguageSwitcher__ENG,
-              i18n.language === "en" && styles["Menu__LanguageSwitcher__Focus"]
+              locale === "en" && styles["Menu__LanguageSwitcher__Focus"]
             )}
           >
             ENG
           </button>
           <button
-            onClick={() => {
-              changeLanguage("uk");
-            }}
+            onClick={handleClick("uk")}
             className={clsx(
               styles.Menu__LanguageSwitcher__UKR,
-              i18n.language === "uk" && styles["Menu__LanguageSwitcher__Focus"]
+              locale === "uk" && styles["Menu__LanguageSwitcher__Focus"]
             )}
           >
             UKR

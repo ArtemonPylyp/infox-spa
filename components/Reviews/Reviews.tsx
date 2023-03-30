@@ -10,12 +10,11 @@ import third from "/images/reviews/third.png";
 import firstPerson from "/images/reviews/firstPerson.png";
 import secondPerson from "/images/reviews/secondPerson.png";
 import thirdPerson from "/images/reviews/thirdPerson.png";
-import { useMemo } from "react";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+
+import { useTranslation } from "next-i18next";
 
 export const Reviews: React.FC = () => {
-  const { t } = useTranslation(Sections.Reviews);
+  const { t } = useTranslation("reviews");
   const ContentArray = {
     first: {
       img: [first, firstPerson],

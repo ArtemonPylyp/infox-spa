@@ -4,11 +4,10 @@ import Phone from "/images/footer/mobile.svg";
 import Location from "/images/footer/location.svg";
 import { Item } from "./Item/Item";
 import { Data } from "./Item/Item";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export const Contacts = () => {
-  const { t } = useTranslation(Sections.Footer);
+  const { t } = useTranslation("footer");
 
   const itemsArray: Data[] = [
     {

@@ -4,11 +4,11 @@ import Template from "/images/features/Items/templateCircle.svg";
 import Integration from "/images/features/Items/seo.svg";
 import { useContext } from "react";
 import { Context } from "@/src/Context";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
+
 export const MainBox: React.FC = () => {
   const close = useContext(Context);
-  const { t } = useTranslation(Sections.Features);
+  const { t } = useTranslation("features");
 
   return (
     <div className={styles.mainBox}>

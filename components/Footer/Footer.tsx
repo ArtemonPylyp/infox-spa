@@ -5,11 +5,10 @@ import { Contacts } from "./Contacts/Contacts";
 import { List } from "./List/List";
 import { Socials } from "./Socials/Socials";
 import { Privacy } from "./Privacy/Privacy";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
+import { useTranslation } from "next-i18next";
 
 export const Footer: React.FC = () => {
-  const { t } = useTranslation(Sections.Footer);
+  const { t } = useTranslation("footer");
 
   const data = {
     products: {

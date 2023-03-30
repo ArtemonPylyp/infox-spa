@@ -14,9 +14,8 @@ import kotlin from "images/technologies/kotlin.svg";
 import mysql from "images/technologies/mysql.svg";
 import nest from "images/technologies/nest.svg";
 import docker from "images/technologies/docker.svg";
-import { useTranslation } from "react-i18next";
-import { Sections } from "@/i18n";
-import { useTransition } from "react";
+import { useTranslation } from "next-i18next";
+
 export interface TextObject {
   firstPage: {
     one: string;
@@ -41,7 +40,7 @@ export interface TextObject {
 }
 
 export const TextFunction = () => {
-  const { t } = useTranslation(Sections.Technologies);
+  const { t } = useTranslation("technologies");
   return [
     {
       img: swift,
@@ -127,7 +126,7 @@ export const TextFunction = () => {
 };
 
 export const textArray = () => {
-  const { t } = useTranslation(Sections.Services);
+  const { t } = useTranslation("services");
   return {
     firstPage: {
       one: t("boxes.website.first"),

@@ -38,7 +38,7 @@
   width: 450px;
   min-height: 100px;
   border: 1px solid #f8f8f8;
-  background-color: #101010;
+  background: rgb(12 12 12 / 98%);
   box-shadow: 0 0 20px 5px rgb(71, 71, 71);
   border-radius: 20px;
   @include media(tablet) {

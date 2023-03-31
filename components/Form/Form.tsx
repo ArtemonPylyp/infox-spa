@@ -93,22 +93,6 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
 
       <div className={styles.Form__InputBox}>
         <input
-          name="lastName"
-          className={styles.Form__Input}
-          type="text"
-          required
-          value={surname}
-          onChange={(event) => setSurname(event.target.value)}
-          placeholder="surname"
-        />
-
-        <label htmlFor="lastName" className={styles.Form__Label}>
-          {t("surname")}
-        </label>
-      </div>
-
-      <div className={styles.Form__InputBox}>
-        <input
           name="email"
           className={styles.Form__InputEmail}
           type="text"

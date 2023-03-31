@@ -12,7 +12,7 @@ const nextConfig = {
   //     "/uk": { page: "/uk" },
   //   };
   // },
-  // output: "export",
+  output: "export",
   trailingSlash: true,
   reactStrictMode: true,
   reactStrictMode: true,

@@ -12,10 +12,10 @@ export const Item: React.FC<Item> = ({ Picture, title, description }) => {
       <Picture
         className={styles.image}
         alt={title}
-        onMouseEnter={() => {
+        onPointerEnter={() => {
           setVisible(true);
         }}
-        onMouseLeave={() => {
+        onPointerLeave={() => {
           setVisible(false);
         }}
       />

@@ -29,6 +29,7 @@
   // align-items: center;
 
   &__Coma {
+    z-index: -1;
     width: 150px;
     position: absolute;
     top: 20px;
@@ -61,7 +62,7 @@
 
     @include media(phone) {
       font-size: 36px;
-      line-height: 38px;
+      line-height: 50px;
     }
   }
   &__Description {
@@ -77,7 +78,7 @@
     align-items: center;
     justify-content: center;
 
-    gap: 40px;
+    gap: 80px;
     @include media(phone) {
       flex-direction: column;
       margin: 0;
@@ -92,6 +93,6 @@
   &__Second {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 80px;
   }
 }

@@ -9,6 +9,7 @@
   /*border: 1px solid red;*/
   animation: rotateSphere 7s linear infinite;
   -webkit-animation: rotateSphere 7s linear infinite;
+
   .plane {
     position: absolute;
     top: 0;
@@ -38,9 +39,7 @@
         position: absolute;
         height: 4px;
         width: 4px;
-
         background-color: white;
-
         list-style-type: circle;
         display: inline-block;
         top: 0;
@@ -63,6 +62,7 @@
     }
   }
 }
+
 @keyframes rotateSphere {
   0% {
     transform: rotate3d(1, 1, 1, -360deg);
@@ -71,11 +71,3 @@
     transform: rotate3d(0, 0, 0, 360deg);
   }
 }
-// @-webkit-keyframes rotateShpere {
-//   0% {
-//     -webkit-transform: rotate3d(1, 1, 1, -360deg);
-//   }
-//   100% {
-//     -webkit-transform: rotate3d(0, 0, 0, 360deg);
-//   }
-// }

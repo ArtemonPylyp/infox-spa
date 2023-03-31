@@ -2,9 +2,9 @@
 .decision {
   position: relative;
   margin-top: 5%;
-  padding: 5% 10%;
+  padding: 10% 5%;
   @include media(phone) {
-    padding: 16px 0;
+    padding: 6% 6%;
   }
 }
 
@@ -16,8 +16,8 @@
   gap: 60px;
   align-items: center;
   justify-content: center;
-  padding: 16px 80px;
-  border-radius: 16px;
+  padding: 45px 80px;
+  border-radius: 30px;
   min-height: 500px;
 
   @include media(phone) {
@@ -26,7 +26,6 @@
     justify-content: center;
     gap: 50px;
     padding: 45px 20px;
-    margin: 0 40px;
   }
 }
 .title {

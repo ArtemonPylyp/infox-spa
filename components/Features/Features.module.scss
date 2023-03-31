@@ -2,8 +2,8 @@
 
 .features {
   padding-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 6%;
+  padding-right: 6%;
   width: 100%;
   @include media(phone) {
     padding-left: 6%;
@@ -36,5 +36,6 @@
   padding: 80px;
   @include media(phone) {
     grid-template-columns: 1fr;
+    padding-right: 30px;
   }
 }

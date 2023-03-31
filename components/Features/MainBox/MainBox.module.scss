@@ -51,6 +51,7 @@
   padding: 65px;
   @include media(phone) {
     border-bottom: 1px solid white;
+    padding-right: 30px;
   }
 }
 .buttonBlock {

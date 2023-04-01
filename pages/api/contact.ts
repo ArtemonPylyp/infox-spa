@@ -10,7 +10,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const message = `
     Name: ${body.name}\r\n
-    Surname: ${body.surname}\r\n
+   
     Email: ${body.email}\r\n
     Phone: ${body.phone}
     Company: ${body.company}\r\n

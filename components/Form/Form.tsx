@@ -13,13 +13,13 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
   const { t } = useTranslation("form");
   type FormData = {
     name: string;
-    surname: string;
+
     email: string;
     phone?: string | number;
     company?: string;
   };
   const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
+
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
@@ -29,7 +29,7 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
 
     const data: FormData = {
       name,
-      surname,
+
       email,
       phone,
       company,
@@ -41,7 +41,7 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
     });
 
     setName("");
-    setSurname("");
+    setPhone("");
     setEmail("");
     setCompany("");
   };

@@ -72,3 +72,12 @@
     line-height: 20px;
   }
 }
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  fill: #f8f8f8;
+  width: 15px;
+  top: 10%;
+  right: 5%;
+}

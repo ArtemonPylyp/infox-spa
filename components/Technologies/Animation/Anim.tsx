@@ -1,4 +1,3 @@
-import "css-doodle";
 import styles from "./Anim.module.scss";
 
 export const Anim: React.FC = () => {

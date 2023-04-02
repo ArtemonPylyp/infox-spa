@@ -9,7 +9,7 @@ export type LanguageSwitcherProps = {
 export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   className,
 }) => {
-  const { locale, locales, push } = useRouter();
+  const { locale, push } = useRouter();
 
   const handleClick = (l: string) => () => {
     push("/", undefined, { locale: l });

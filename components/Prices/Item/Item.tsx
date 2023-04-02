@@ -3,7 +3,7 @@ import styles from "../Item/Item.module.scss";
 import { Pointer } from "../Pointer/Pointer";
 
 import { Divider } from "@/components/Footer/Divider/Divider";
-import { ClassValue } from "clsx";
+
 import { Context } from "@/src/Context";
 import { useTranslation } from "next-i18next";
 
@@ -22,7 +22,7 @@ export const Item: React.FC<ItemProps> = ({
   description,
   price,
 }) => {
-  const [state, setState] = useState(primary);
+  const [state] = useState(primary);
   const close = useContext(Context);
   const { t } = useTranslation("prices");
 

@@ -2,12 +2,7 @@
 
 .Reviews {
   position: relative;
-  // background: linear-gradient(
-  //   141.34deg,
-  //   #f5f0ff 0%,
-  //   #eff6fe 50.36%,
-  //   #edfaf5 100%
-  // );
+
   padding-top: 10%;
   display: flex;
   flex-direction: row;
@@ -24,9 +19,6 @@
     overflow-y: hidden;
     padding: 15% 10%;
   }
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
 
   &__Coma {
     z-index: -1;

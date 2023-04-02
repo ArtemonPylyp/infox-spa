@@ -9,19 +9,13 @@
   padding-left: 6%;
   padding-right: 6%;
   padding-bottom: 5%;
-  // background: linear-gradient(
-  //   141.34deg,
-  //   #f5f0ff 0%,
-  //   #eff6fe 50.36%,
-  //   #edfaf5 100%
-  // );
 }
 .title {
   font-weight: 700;
   font-size: 90px;
 
   color: #f8f8f8;
-  // color: #1f284f;
+
   @include media(phone) {
     font-size: 36px;
   }

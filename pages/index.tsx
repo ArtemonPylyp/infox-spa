@@ -16,7 +16,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Form } from "@/components/Form/Form";
 
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
+
 import { Context } from "@/src/Context";
 
 export default function Main() {

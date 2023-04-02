@@ -1,23 +1,18 @@
 @import "/styles/global/_mixins.scss";
 
-// .MainItem {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
 .Item {
   max-width: 415px;
   min-height: 600px;
   border-top: #ffffff 2px solid;
   border-bottom: #ffffff 2px solid;
-  // background: #f4f6fc;
+
   border-radius: 12px;
   padding: 48px 76px;
   display: flex;
   flex-direction: column;
   gap: 75px;
   justify-content: flex-start;
-  // border: 1px solid rgb(49, 49, 49);
+
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: all 0.25s ease;
@@ -44,10 +39,10 @@
   gap: 75px;
   transform: translateY(-20px) scale(1.02);
   justify-content: flex-start;
-  // border: 1px solid rgb(49, 49, 49);
+
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  // background: #1c1e53;
+
   transition: all 0.25s ease;
   &:hover {
     transform: translateY(-30px) scale(1.02);

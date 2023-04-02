@@ -3,14 +3,12 @@ import styles from "../Hero/Hero.module.scss";
 import Arrow from "/images/hero/Arrow.svg";
 import { Particles } from "../Particle/Particles";
 import { ArrowScroll } from "./ArrowScroll/ArrowScroll";
-import { useContext } from "react";
 
-import { Context } from "../../src/Context";
 import { useTranslation } from "next-i18next";
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation("home");
-  const close = useContext(Context);
+
   return (
     <main id="home" className={styles.main}>
       <Particles id="particles" />

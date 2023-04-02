@@ -25,7 +25,7 @@ export default function Navigation({ children }: Navigation) {
         <nav className={styles.navigation}>
           <div className={styles.company}>
             <a href="#home">
-              <Logo className={styles.logo} />
+              <Logo alt="logo" className={styles.logo} />
             </a>
             <CompanyName />
           </div>

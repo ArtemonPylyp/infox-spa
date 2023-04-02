@@ -15,7 +15,6 @@ export const Technologies: React.FC = () => {
         <IconsGrid />
       </div>
       <div className={styles.secondBlock}>
-        {/* <Animation /> */}
         <Anim />
       </div>
     </section>

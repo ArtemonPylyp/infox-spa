@@ -3,8 +3,7 @@
 .Block {
   display: flex;
   flex-direction: column;
-  // align-items: flex-start;
-  // gap: 25px;
+
   justify-content: space-between;
   @include media(phone) {
     gap: 0;

@@ -2,11 +2,7 @@ import styles from "../Prices/Prices.module.scss";
 import { Item } from "./Item/Item";
 import { useTranslation } from "next-i18next";
 
-export type PriceProps = {
-  setClosed?: () => void;
-};
-
-export const Prices: React.FC<PriceProps> = ({ setClosed }) => {
+export const Prices: React.FC = () => {
   const { t } = useTranslation("prices");
   const firstItemsArray: string[] = [
     t("fistItem.plusses.first"),

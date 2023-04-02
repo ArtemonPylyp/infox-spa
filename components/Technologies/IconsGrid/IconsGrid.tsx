@@ -1,9 +1,7 @@
-import { Context } from "@/src/Context";
 import styles from "../IconsGrid/IconsGrid.module.scss";
 
 import { Item } from "./Item";
 import { TextFunction } from "@/src/texts";
-import { createContext, useContext, useState } from "react";
 
 export const IconsGrid: React.FC = () => {
   const dataTech = TextFunction();

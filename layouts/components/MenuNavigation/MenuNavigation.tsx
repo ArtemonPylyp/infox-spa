@@ -20,7 +20,7 @@ export const MenuNavigation: React.FC<MenuNavigationProps> = ({
   onClose,
   className,
 }) => {
-  const { locale, locales, push } = useRouter();
+  const { locale, push } = useRouter();
 
   const handleClick = (l: string) => () => {
     push("/", undefined, { locale: l });

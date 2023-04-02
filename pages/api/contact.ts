@@ -10,14 +10,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const message = `
     Name: ${body.name}\r\n
-   
     Email: ${body.email}\r\n
     Phone: ${body.phone}
     Company: ${body.company}\r\n
   `;
 
   const data = {
-    to: "pylypenko.artem@lll.kpi.ua",
+    to: "infoxukraine@gmail.com",
     from: "pylypenko.art@gmail.com",
     subject: `New message from ${body.name}`,
     text: message,

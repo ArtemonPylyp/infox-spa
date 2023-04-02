@@ -13,7 +13,7 @@ export const Contacts = () => {
     {
       Img: Email,
       title: t("reachUs.support"),
-      description: "hello@landify.com",
+      description: "infoxukraine@gmail.com",
     },
     {
       Img: Phone,
@@ -23,7 +23,7 @@ export const Contacts = () => {
     {
       Img: Location,
       title: t("reachUs.ukraineOffice"),
-      description: "hello@landify.com",
+      description: t("address"),
     },
   ];
   return (

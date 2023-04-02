@@ -24,7 +24,9 @@ export default function Navigation({ children }: Navigation) {
       <header className={styles.header}>
         <nav className={styles.navigation}>
           <div className={styles.company}>
-            <Logo className={styles.logo} />
+            <a href="#home">
+              <Logo className={styles.logo} />
+            </a>
             <CompanyName />
           </div>
           <ul className={styles.ul}>

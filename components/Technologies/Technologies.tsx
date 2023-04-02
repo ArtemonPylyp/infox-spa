@@ -4,7 +4,6 @@ import { IconsGrid } from "./IconsGrid/IconsGrid";
 
 import { useTranslation } from "next-i18next";
 
-import { Animation } from "./Animation/Animation";
 import { Anim } from "./Animation/Anim";
 
 export const Technologies: React.FC = () => {

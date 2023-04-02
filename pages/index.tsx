@@ -20,7 +20,6 @@ import { useRouter } from "next/router";
 import { Context } from "@/src/Context";
 
 export default function Main() {
-  const { locale, locales, push } = useRouter();
   const [open, setOpen] = useState(false);
   const setClose = () => setOpen((prev) => !prev);
   const { t } = useTranslation("langs");

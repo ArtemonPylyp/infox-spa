@@ -11,9 +11,9 @@ export const List: React.FC<ListProps> = ({ title, items }) => (
 
     <div className={styles.List__Items}>
       {items.map((value, index) => (
-        <div key={index} className={styles.List__Item}>
+        <a key={index} className={styles.List__Item}>
           {value}
-        </div>
+        </a>
       ))}
     </div>
   </div>

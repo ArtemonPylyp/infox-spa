@@ -1,29 +1,30 @@
 import styles from "../IconsGrid/Item.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CloseIcon from "/images/hero/MenuClose.svg";
+
 export interface Item {
   Picture: any;
   title: string;
   description: string;
 }
+
 export const Item: React.FC<Item> = ({ Picture, title, description }) => {
-  const [visible, setVisible] = useState(false);
+  const [close, setClose] = useState(false);
+
   return (
     <div className={styles.mainBlock}>
       <Picture
         className={styles.image}
         alt={title}
         onClick={() => {
-          setVisible(true);
+          setClose((prev) => !prev);
         }}
       />
 
-      {visible && (
+      {close && (
         <div className={styles.description}>
           <CloseIcon
-            onClick={() => {
-              setVisible(false);
-            }}
+            onClick={() => setClose(false)}
             className={styles.closeIcon}
           />
           <h3 className={styles.title}>{title}</h3>

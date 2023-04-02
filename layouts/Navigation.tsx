@@ -30,21 +30,23 @@ export default function Navigation({ children }: Navigation) {
             <CompanyName />
           </div>
           <ul className={styles.ul}>
-            <a href="#home">
-              <li className={styles.item}>{t("home.title")}</li>
-            </a>
+            <li className={styles.item}>
+              <a href="#home">{t("home.title")}</a>{" "}
+            </li>
 
-            <a href="#about">
-              <li className={styles.item}>{t("about.title")}</li>
-            </a>
+            <li className={styles.item}>
+              {" "}
+              <a href="#about">{t("about.title")}</a>
+            </li>
 
-            <a href="#services">
-              <li className={styles.item}>{t("services.title")}</li>
-            </a>
+            <li className={styles.item}>
+              {" "}
+              <a href="#services">{t("services.title")}</a>{" "}
+            </li>
 
-            <a href="#contacts">
-              <li className={styles.item}>{t("contacts.title")}</li>
-            </a>
+            <li className={styles.item}>
+              <a href="#contacts">{t("contacts.title")}</a>{" "}
+            </li>
           </ul>
           <div className={styles.buttonGroup}>
             <div onClick={close} className={styles.buttonBlock}>

@@ -16,6 +16,7 @@
     "@types/react-dom": "18.0.10",
     "clsx": "^1.2.1",
     "compass": "^0.1.1",
+    "css-doodle": "^0.34.7",
     "eslint": "8.32.0",
     "eslint-config-next": "^13.2.3",
     "i18n": "^0.15.1",

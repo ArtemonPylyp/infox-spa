@@ -3,6 +3,7 @@ import CloseIcon from "/images/hero/MenuClose.svg";
 import React, { FormEvent, useState } from "react";
 import styles from "./Form.module.scss";
 import { useTranslation } from "next-i18next";
+import { log } from "console";
 
 export type FormProps = {
   className?: ClassValue | ClassValue[];
@@ -34,10 +35,14 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
       phone,
       company,
     };
+    const body = JSON.stringify(data);
 
     fetch("/api/contact", {
       method: "POST",
-      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: body,
     });
 
     setName("");

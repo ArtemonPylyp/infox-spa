@@ -1,3 +1,4 @@
+import { log } from "console";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const mail = require("@sendgrid/mail");
@@ -5,7 +6,9 @@ const mail = require("@sendgrid/mail");
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(req.body);
   const body = JSON.parse(req.body);
+
   console.log(body);
 
   const message = `

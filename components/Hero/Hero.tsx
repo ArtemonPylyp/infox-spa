@@ -28,7 +28,11 @@ export const Hero: React.FC = () => {
               <ArrowScroll />
             </a>
 
-            <a href="#price" className={styles.buttonPrices}>
+            <a
+              href="#price"
+              aria-label="Scroll more"
+              className={styles.buttonPrices}
+            >
               {t("buttons.priceButton")}
               <Arrow className={styles.arrow} />
             </a>

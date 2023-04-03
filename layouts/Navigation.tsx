@@ -24,7 +24,7 @@ export default function Navigation({ children }: Navigation) {
       <header className={styles.header}>
         <nav className={styles.navigation}>
           <div className={styles.company}>
-            <a href="#home">
+            <a href="#home" aria-label="Logo">
               <Logo alt="logo" className={styles.logo} />
             </a>
             <CompanyName />

@@ -14,6 +14,8 @@ export const Menu: React.FC<MenuProps> = ({ className, onClick }) => {
   return (
     <div>
       <button
+        id="menu-button"
+        aria-label="Menu"
         onClick={() => setOpen((prev) => !prev)}
         className={clsx(styles.Menu__Icon, className)}
       >

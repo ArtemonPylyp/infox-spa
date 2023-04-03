@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
               {t("buttons.formButton")}
             </a>
 
-            <a href="#about" aria-aria-label="Scroll for more info">
+            <a href="#about" aria-label="Scroll for more info">
               <ArrowScroll />
             </a>
 

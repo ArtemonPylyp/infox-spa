@@ -13,36 +13,28 @@ export type FormProps = {
 export const Form: React.FC<FormProps> = ({ className, onClose }) => {
   const { t } = useTranslation("form");
 
-  type FormData = {
-    name: string;
-    email: string;
-    phone?: string | number;
-    company?: string;
-  };
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = (event: any) => {
     event.preventDefault();
 
-    const data: FormData = {
-      name,
-      email,
-      phone,
-      company,
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      company: company,
     };
-    const body = JSON.stringify(data);
 
     fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: body,
+      body: JSON.stringify(data),
     });
 
     setName("");
@@ -64,7 +56,7 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
       onSubmit={handleSubmit}
       id="popUpForm"
       className={clsx(styles.Form, className)}
-      method="post"
+      method="POST"
       action=""
     >
       <span className={styles.Form__LeftTop}></span>

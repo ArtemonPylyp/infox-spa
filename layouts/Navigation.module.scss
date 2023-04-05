@@ -9,8 +9,8 @@
   align-items: center;
 }
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 
   @include media(tablet) {
     width: 55px;
@@ -24,7 +24,7 @@
 }
 .header {
   position: fixed;
-  padding: 0 50px;
+  padding: 0 6%;
   align-items: center;
 
   width: 100%;
@@ -68,7 +68,7 @@
 .navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 32px;
 

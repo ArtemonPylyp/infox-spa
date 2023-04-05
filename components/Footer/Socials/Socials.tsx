@@ -15,7 +15,7 @@ const SocialsArray: any[] = [
   },
   {
     Icon: Facebook,
-    href: "https://instagram.com/infox.ukraine?igshid=YmMyMTA2M2Y=",
+    href: "https://www.facebook.com/profile.php?id=100091604915885",
     name: "FacebookIcon",
   },
   {

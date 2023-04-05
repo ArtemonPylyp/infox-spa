@@ -1,9 +1,8 @@
 import clsx, { ClassValue } from "clsx";
 import CloseIcon from "/images/hero/MenuClose.svg";
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Form.module.scss";
 import { useTranslation } from "next-i18next";
-import { log } from "console";
 
 export type FormProps = {
   className?: ClassValue | ClassValue[];
@@ -15,7 +14,6 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
 
@@ -23,17 +21,14 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
     event.preventDefault();
 
     const data = {
-      name: name,
-      email: email,
-      phone: phone,
-      company: company,
+      name,
+      email,
+      phone,
+      company,
     };
 
     fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      method: "post",
       body: JSON.stringify(data),
     });
 
@@ -42,14 +37,6 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
     setPhone("");
     setCompany("");
   };
-
-  const setClose = (event: KeyboardEvent) => {
-    if (event.key === "Escape") {
-      onClose();
-    }
-  };
-
-  document?.addEventListener("keydown", setClose);
 
   return (
     <form

@@ -7,13 +7,14 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const body = JSON.parse(req.body);
+
   const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
     Phone: ${body.phone}
     Company: ${body.company}\r\n
   `;
-  //"infoxukraine@gmail.com"
+
   const data = {
     to: "infoxukraine@gmail.com",
     from: "pylypenko.art@gmail.com",

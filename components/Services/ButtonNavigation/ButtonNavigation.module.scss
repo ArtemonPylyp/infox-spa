@@ -1,7 +1,15 @@
+@import "styles/global/_mixins.scss";
 .buttonsNav {
-  overflow: scroll;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 25px;
+
+  @include media(phone) {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+  }
 }

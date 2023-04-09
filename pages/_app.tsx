@@ -5,6 +5,8 @@ import "../styles/global/global.scss";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
 import { appWithTranslation } from "next-i18next";
+import { Analytics } from "@vercel/analytics/react";
+
 function App({ Component, pageProps }: AppProps) {
   const { t } = useTranslation("langs");
   return (
@@ -26,6 +28,7 @@ function App({ Component, pageProps }: AppProps) {
       />
 
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }

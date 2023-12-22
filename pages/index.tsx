@@ -62,7 +62,7 @@ export default function Main() {
             <Reviews />
             <Footer />
             {open && <Form onClose={setClose} setSuccess={handleSetSuccess} />}
-            <Success show={true} />
+            <Success show={success} />
           </Navigation>
         </Context.Provider>
       </Background>

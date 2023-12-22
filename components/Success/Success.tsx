@@ -22,7 +22,7 @@ export const Success: React.FC<SuccessProps> = ({show}) => {
             <span className={styles.Success__RightBottom}></span>
             
             <div className={styles.Success__Block}>
-                <SuccessIcon />
+                <SuccessIcon className={styles.Success__Icon} />
                 
                 <div className={ styles.Success__Title}>{t("success")}</div>
             </div>

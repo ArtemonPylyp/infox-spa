@@ -4,5 +4,6 @@
   "surname": "Last Name",
   "phone": "Phone",
   "company": "Company",
-  "submit": "submit"
+  "submit": "submit",
+  "success":"Thank you! Your data is in processes. Our manager will contact you soon. Have a nice day!"
 }

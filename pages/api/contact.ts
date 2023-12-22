@@ -25,5 +25,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   await mail.send(data);
 
+  
   res.status(200).json({ status: "OK" });
 };

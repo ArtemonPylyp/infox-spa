@@ -31,10 +31,10 @@ export const Item: React.FC<ItemProps> = ({
       {state ? (
         <div className={styles.Item_p}>
           <div className={styles.TextBlock}>
-            <div className={styles.Price}>
+            {/* <div className={styles.Price}>
               <p className={styles.PriceValue_p}>{price}</p>
               <span className={styles.PriceSpan_p}>{t("perDesign")}</span>
-            </div>
+            </div> */}
             <div className={styles.PriceTitle}>
               <p className={styles.Title_p}>{title}</p>
               <p className={styles.Description_p}>{description}</p>
@@ -53,10 +53,10 @@ export const Item: React.FC<ItemProps> = ({
       ) : (
         <div className={styles.Item}>
           <div className={styles.TextBlock}>
-            <div className={styles.Price}>
+            {/* <div className={styles.Price}>
               <p className={styles.PriceValue}>{price}</p>
               <span className={styles.PriceSpan}>{t("perDesign")}</span>
-            </div>
+            </div> */}
             <div className={styles.PriceTitle}>
               <p className={styles.Title}>{title} </p>
               <p className={styles.Description}>{description}</p>

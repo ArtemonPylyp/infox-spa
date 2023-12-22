@@ -18,10 +18,24 @@ import { Form } from "@/components/Form/Form";
 import { useTranslation } from "next-i18next";
 
 import { Context } from "@/src/Context";
+import { Success } from "@/components/Success/Success";
 
 export default function Main() {
   const [open, setOpen] = useState(false);
-  const setClose = () => setOpen((prev) => !prev);
+  const [success, setSuccess] = useState(false);
+  const setClose = () => {
+    setOpen((prev) => !prev)
+  };
+
+  const handleSetSuccess = () => {
+      setSuccess(true)
+    setTimeout(() => {
+           setSuccess(false)
+         }, 3000)
+         
+    
+  }
+  
   const { t } = useTranslation("langs");
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -47,7 +61,8 @@ export default function Main() {
 
             <Reviews />
             <Footer />
-            {open && <Form onClose={setClose} />}
+            {open && <Form onClose={setClose} setSuccess={handleSetSuccess} />}
+            <Success show={success} />
           </Navigation>
         </Context.Provider>
       </Background>

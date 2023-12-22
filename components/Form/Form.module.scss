@@ -3,8 +3,9 @@
 .Form {
   position: fixed;
   z-index: 3;
-  top: 10%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70%;
   background: rgb(12 12 12 / 98%);
   padding: 50px;

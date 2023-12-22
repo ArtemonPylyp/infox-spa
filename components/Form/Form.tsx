@@ -7,9 +7,10 @@ import { useTranslation } from "next-i18next";
 export type FormProps = {
   className?: ClassValue | ClassValue[];
   onClose: () => void;
+  setSuccess: () => void;
 };
 
-export const Form: React.FC<FormProps> = ({ className, onClose }) => {
+export const Form: React.FC<FormProps> = ({ className, onClose, setSuccess }) => {
   const { t } = useTranslation("form");
 
   const [name, setName] = useState("");
@@ -27,10 +28,17 @@ export const Form: React.FC<FormProps> = ({ className, onClose }) => {
       company,
     };
 
-    fetch("/api/contact", {
+   const response =  fetch("/api/contact", {
       method: "post",
       body: JSON.stringify(data),
-    });
+   });
+    
+    response.then(data => {
+      if (!data.ok) 
+        setSuccess();
+    })
+
+    onClose()
 
     setName("");
     setEmail("");

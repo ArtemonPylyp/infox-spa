@@ -1,0 +1,84 @@
+@import "/styles/global/_mixins.scss";
+
+.Success{
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: rgb(12 12 12 / 98%);
+    padding: 50px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 0 20px 5px rgb(5 90 197);
+   
+      &__LeftTop {
+       position: absolute;
+       width: 30px;
+       height: 30px;
+       border: 2px solid rgba(0, 0, 0, 0);
+       top: 0;
+       left: 0;
+       border-top-color: #fff;
+       border-left-color: #fff;
+       border-top-left-radius: 10px;
+     }
+     &__LeftBottom {
+       position: absolute;
+       width: 30px;
+       height: 30px;
+       border: 2px solid rgba(0, 0, 0, 0);
+       bottom: 0;
+       left: 0;
+       border-bottom-color: #fff;
+       border-left-color: #fff;
+       border-bottom-left-radius: 10px;
+     }
+     &__RightTop {
+       position: absolute;
+       width: 30px;
+       height: 30px;
+       border: 2px solid rgba(0, 0, 0, 0);
+       top: 0;
+       right: 0;
+       border-top-color: #fff;
+       border-right-color: #fff;
+       border-top-right-radius: 10px;
+     }
+     &__RightBottom {
+       position: absolute;
+       width: 30px;
+       height: 30px;
+       border: 2px solid rgba(0, 0, 0, 0);
+       right: 0;
+       bottom: 0;
+       border-right-color: #fff;
+       border-bottom-color: #fff;
+       border-bottom-right-radius: 10px;
+     }
+
+     &__Block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     
+     
+
+       &__Title {
+            margin-top: 30px;
+            color: #f8f8f8;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+
+            @include media(phone) {
+            font-size: 26px;
+        }
+  }
+} 

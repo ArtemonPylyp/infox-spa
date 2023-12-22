@@ -2,15 +2,15 @@
 
 .Item {
   max-width: 415px;
-  min-height: 600px;
+  height: fit-content;
   border-top: #ffffff 2px solid;
   border-bottom: #ffffff 2px solid;
-
+  align-items: center;
   border-radius: 12px;
-  padding: 48px 76px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
-  gap: 75px;
+  gap: 2rem;
   justify-content: flex-start;
 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -28,15 +28,15 @@
 }
 .Item_p {
   max-width: 415px;
-  min-height: 650px;
+  align-items: center;
+  height: fit-content;
   border-top: #fcd980 2px solid;
   border-bottom: #fcd980 2px solid;
-
   border-radius: 12px;
-  padding: 48px 76px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
-  gap: 75px;
+  gap: 2rem;
   transform: translateY(-20px) scale(1.02);
   justify-content: flex-start;
 
@@ -92,16 +92,16 @@
   color: #fcd980;
 }
 .Title {
-  margin-top: 20px;
+
   font-weight: 600;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 36px;
   color: #f8f8f8;
 }
 .Title_p {
-  margin-top: 20px;
+
   font-weight: 600;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 36px;
   color: #ffff;
 }
@@ -125,6 +125,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+    text-wrap: nowrap;
 }
 .ButtonBlock {
   cursor: pointer;

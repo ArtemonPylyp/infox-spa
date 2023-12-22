@@ -34,7 +34,7 @@ export const Form: React.FC<FormProps> = ({ className, onClose, setSuccess }) =>
    });
     
     response.then(data => {
-      if (!data.ok) 
+      if (data.ok) 
         setSuccess();
     })
 

@@ -22,6 +22,7 @@
     transform: translateY(-20px);
   }
   @include media(phone) {
+    max-width: 100%;
     width: 100%;
     padding: 45px;
   }
@@ -50,6 +51,7 @@
   }
   @include media(phone) {
     transform: none;
+     max-width: 100%;
     width: 100%;
     padding: 45px;
   }

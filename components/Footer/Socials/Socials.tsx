@@ -37,8 +37,8 @@ export const Socials: React.FC = () => {
       <div className={styles.Socials__Title}>{t("description")}</div>
 
       <ul className={styles.Socials__List}>
-        {SocialsArray.map(({ Icon, href, name, index }) => (
-          <li key={index}>
+        {SocialsArray.map(({ Icon, href, name },key) => (
+          <li key={key}>
             <a
               href={href}
               target="_blank"
